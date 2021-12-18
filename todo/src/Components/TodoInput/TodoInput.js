@@ -1,5 +1,7 @@
 import "./TodoInput.css";
 import { useState } from "react";
+import Button from "../Button/Button";
+
 function TodoInput(props) {
   const [inputData, setInputData] = useState("");
 
@@ -24,9 +26,9 @@ function TodoInput(props) {
             onChange={onChangehandler}
           />
         </label>
-        <button type="submit" className="btn-submit">
+        <Button type="submit">
           Submit
-        </button>
+        </Button>
       </form>
     </div>
   );

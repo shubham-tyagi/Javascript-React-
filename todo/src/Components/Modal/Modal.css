@@ -1,10 +1,10 @@
 .modal {
-  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
 }
 .show {
   display: block;
@@ -13,17 +13,30 @@
   display: none;
 }
 .modal-content {
-  background-color: lightgreen;
-  position: relative;
-  /* left: 50%;
-  top: 50%; */
-  /* margin-top: 35%; */
-  /* top: 50%;
-  left: 46%; */
-  width: 40%;
-  height: 10%;
-  margin: 0 auto;
-  margin-top: 30%;
-  padding: 2% 7%;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0rem;
   border-radius: 0.5rem;
+  padding-bottom: 1%;
+}
+
+.error-heading{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5% 10%;
+  /* margin: 0 1rem; */
+  color: white;
+  background-color: brown;
+  display: block;
+}
+
+.error-content{
+  margin: 5% 2%;
 }

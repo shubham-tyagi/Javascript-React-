@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.css";
 import TodoList from "./Components/TodoList/TodoList";
 import TodoInput from "./Components/TodoInput/TodoInput";
 import Modal from "./Components/Modal/Modal";
@@ -51,8 +51,8 @@ function App() {
 
   return (
     <div>
-      <div className="cent">
-        <div className="heading"> TO - DO List </div>
+      <div className={styles["cent"]}>
+        <div className={styles.heading}> TO - DO List </div>
         <TodoInput onInputSubmit={onInputSubmitHandler} />
         <TodoList todos={Todos} onDelete={onDeleteHandler} />
         <Modal errorCode={error} clickModal={handleClickModal} />

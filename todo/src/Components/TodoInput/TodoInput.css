@@ -1,24 +1,12 @@
 .form-card {
-  background-color: lightslategray;
+  /* background-color: lightslategray; */
   padding: 5% 0%;
   border-radius: 1rem;
-  box-shadow: 5px 10px;
+  background-color: white;
 }
 .form-card {
   font-weight: bold;
   font-size: 130%;
-}
-
-.btn-submit {
-  font-size: larger;
-  font-weight: bold;
-  background-color: transparent;
-  border-radius: 0.5rem;
-  display: block;
-  margin: 0 auto;
-  margin-top: 3%;
-  padding: 2% 5%;
-  cursor: pointer;
 }
 
 .input-feild {
